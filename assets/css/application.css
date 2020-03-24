@@ -1332,11 +1332,11 @@ a.ui-button:active,
     top: .3em
 }
 
-@-ms-viewport {
+/* @-ms-viewport {
     body.responsive {
         width: device-width
     }
-}
+} */
 
 body.responsive .hidden {
     display: none;
