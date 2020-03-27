@@ -3,7 +3,7 @@ body,html {
 	overscroll-behavior:none
 }
 html {
-	border-collapse:collapse
+	border-collapse:collapse;
 }
 *,html {
 	box-sizing:border-box
@@ -42,43 +42,43 @@ input,textarea {
 }
 @font-face {
 	font-family:Manrope3;
-	src:url(../fonts/Manrope3-Semibold.woff2) format("woff2"),url(../fonts/Manrope3-Semibold.woff) format("woff");
+	src:url(../fonts/Manrope3-Semibold.otf) format("otf"),url(../fonts/Manrope3-Semibold.otf) format("otf");
 	font-weight:600;
 	font-style:normal
 }
 @font-face {
 	font-family:Manrope3;
-	src:url(../fonts/Manrope3-Medium.woff2) format("woff2"),url(../fonts/Manrope3-Medium.woff) format("woff");
+	src:url(../fonts/Manrope3-Medium.otf) format("otf"),url(../fonts/Manrope3-Medium.otf) format("otf");
 	font-weight:500;
 	font-style:normal
 }
 @font-face {
 	font-family:Manrope3;
-	src:url(../fonts/Manrope3-ExtraBold.woff2) format("woff2"),url(../fonts/Manrope3-ExtraBold.woff) format("woff");
+	src:url(../fonts/Manrope3-ExtraBold.otf) format("otf"),url(../fonts/Manrope3-ExtraBold.otf) format("otf");
 	font-weight:800;
 	font-style:normal
 }
 @font-face {
 	font-family:Manrope3;
-	src:url(../fonts/Manrope3-Light.woff2) format("woff2"),url(../fonts/Manrope3-Light.woff) format("woff");
+	src:url(../fonts/Manrope3-Light.otf) format("otf"),url(../fonts/Manrope3-Light.otf) format("otf");
 	font-weight:300;
 	font-style:normal
 }
 @font-face {
 	font-family:Manrope3;
-	src:url(../fonts/Manrope3-Bold.woff2) format("woff2"),url(../fonts/Manrope3-Bold.woff) format("woff");
+	src:url(../fonts/manrope3-bold.otf) format("otf"),url(../fonts/manrope3-bold.otf) format("otf");
 	font-weight:700;
 	font-style:normal
 }
 @font-face {
 	font-family:Manrope3;
-	src:url(../fonts/Manrope3-Regular.woff2) format("woff2"),url(../fonts/Manrope3-Regular.woff) format("woff");
+	src:url(../fonts/Manrope3-Regular.otf) format("otf"),url(../fonts/Manrope3-Regular.otf) format("otf");
 	font-weight:400;
 	font-style:normal
 }
 @font-face {
 	font-family:Manrope3;
-	src:url(../fonts/Manrope3-Thin.woff2) format("woff2"),url(../fonts/Manrope3-Thin.woff) format("woff");
+	src:url(../fonts/Manrope3-Thin.otf) format("otf"),url(../fonts/Manrope3-Thin.otf) format("otf");
 	font-weight:100;
 	font-style:normal
 }
