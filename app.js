@@ -31,6 +31,4 @@ router.post('/api/coffee_match_answers', function(req,res){
 app.use(express.static(__dirname + '/public/html'));
 app.use(express.static(__dirname + '/public'));
 app.use('/', router);
-app.listen(process.env.port || 3000);
-
-console.log('Running at Port 3000');
+app.listen(process.env.port || 80);
