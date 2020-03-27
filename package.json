@@ -1,0 +1,22 @@
+{
+  "name": "bosgaurus",
+  "version": "1.0.0",
+  "description": "bosgaurus",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeoMeow/bosgaurus.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MeoMeow/bosgaurus/issues"
+  },
+  "homepage": "https://github.com/MeoMeow/bosgaurus#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
