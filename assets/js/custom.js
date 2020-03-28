@@ -1,4 +1,4 @@
 $(() => {
-    $("#menuHeader").load("./public/menu-header.html");
-    $("#footer").load("./public/footer.html")
+    $("#menuHeader").load("menu-header.html");
+    $("#footer").load("footer.html")
 });
