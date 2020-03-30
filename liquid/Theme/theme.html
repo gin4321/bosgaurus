@@ -1,0 +1,14 @@
+<!DOCTYPE html><html lang="en-GB">
+<head>
+	<title>BOSGAURUS COFFEE</title>
+	<meta charset="utf-8"/>
+	{{ 'index.css' | asset_url | stylesheet_tag }}
+	{{ 'collection.css' | asset_url | stylesheet_tag }}
+	<link rel="shortcut icon" href="{{ 'favicon.ico' | asset_url }}">
+</head>
+<body>
+	{{ content_for_header }}
+	{{ content_for_layout }}
+	{{ 'index.js' | asset_url | script_tag }}
+</body>
+</html>
