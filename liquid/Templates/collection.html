@@ -105,7 +105,7 @@
                     <div class="df grid-col grid-col-1 grid-col-2-m grid-col-2-ns full-width z-index-100 semi-compact js-product spec-product grid-col-3-l" data-filter-options="{&quot;9&quot;:[&quot;Single Origin&quot;],&quot;15&quot;:[&quot;South America&quot;],&quot;16&quot;:[&quot;Experimental&quot;]}" id="heap-product-card">
                         <div class="dn-s df flex-row transitional-silver-shadow wi-100">
                             <div class="pos-rel" style="flex-basis: 45%; min-height: 160px; max-height: 260px;">
-                                <a class="db h-100 no-underline " href="https://bluebottlecoffee.com/store/colombia-finca-el-paraiso-red-plum">
+                                <a class="db h-100 no-underline " href="{{ product.url }}">
                                     <div class="h-100 wi-100 media-object bg-size-cover bg-pos-center bg-no-repeat pos-rel" height="490" style="background-image: {{product.images[0].src}} width="490"></div>
                                 </a>
                             </div>
@@ -113,7 +113,7 @@
                                 <div class="df flex-col">
                                     <div class="flex-1-0">
                                         <div class="details-title f8 dib light-silver-shadow ph10 pv5 mt10 bg-white">{{product.type}}</div>
-                                        <h2 class="f5 lh-title light-bold ma0 pt10"><a class="gray-text-link " href="https://bluebottlecoffee.com/store/colombia-finca-el-paraiso-red-plum">{{product.title}}</a></h2>
+                                        <h2 class="f5 lh-title light-bold ma0 pt10"><a class="gray-text-link " href="{{ product.url }}">{{product.title}}</a></h2>
                                         <div class="serif-font italic gray">
                                             <p class="f6">{{product.description}}</p>
                                             <p class="f7"></p>
@@ -157,7 +157,7 @@
                         <div class="dn df-s flex-col grid-col-1 transitional-silver-shadow">
                             <div class="flex-1-0">
                                 <div class="dib v-top wi-100 pos-rel spec-product-photo">
-                                    <a class="db h-100 no-underline " href="https://bluebottlecoffee.com/store/colombia-finca-el-paraiso-red-plum"><img class="lazy media-object pos-rel" data-original={{product.images[0].src}} height="490" width="490" src="{{product.images[0].src}}" style="display: block;"></a>
+                                    <a class="db h-100 no-underline " href="{{ product.url }}"><img class="lazy media-object pos-rel" data-original={{product.images[0].src}} height="490" width="490" src="{{product.images[0].src}}" style="display: block;"></a>
                                 </div>
                                 <div class="tc pos-rel">
                                     <div class="details-title f8 wi-100 pos-abs top--10">
@@ -165,7 +165,7 @@
                                     </div>
                                 </div>
                                 <div class="tc ph10">
-                                    <h2 class="f5 lh-title light-bold mt20 mb5"><a class="gray-text-link " href="https://bluebottlecoffee.com/store/colombia-finca-el-paraiso-red-plum">{{product.title}}</a></h2>
+                                    <h2 class="f5 lh-title light-bold mt20 mb5"><a class="gray-text-link " href="{{ product.url }}">{{product.title}}</a></h2>
                                     <div class="serif-font italic gray">
                                         <p class="f6">{{product.description}}</p>
                                         <p class="f7"></p>
