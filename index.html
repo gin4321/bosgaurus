@@ -240,6 +240,42 @@
 	</div>
 </div>
 </main>
+
+<script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
+	
 <script src="./assets/js/bundle.js"></script>
+
+<script>
+	var oldURL = "";
+	var currentURL = window.location.href;
+	function checkURLchange(currentURL){
+		
+		if(currentURL !== oldURL && currentURL !== undefined){
+			console.log(currentURL);
+			oldURL = currentURL;
+			location.reload();
+
+		}
+
+		oldURL = window.location.href;
+		setInterval(function() {
+			checkURLchange(window.location.href);
+		}, 1000);
+	}
+
+	checkURLchange();
+function load_js(name)
+{
+	console.log('load_js')
+	var head= document.getElementsByTagName('head')[0];
+	var script= document.createElement('script');
+	script.src= 'http://127.0.0.1:8080/assets/js/'+name;
+	head.appendChild(script);
+}
+
+</script>
 </body>
 </html>
