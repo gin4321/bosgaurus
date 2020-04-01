@@ -255,8 +255,7 @@ crossorigin="anonymous"></script>
 	function checkURLchange(currentURL){
 		if(
 			currentURL !== oldURL && 
-			currentURL !== undefined &&
-			currentURL.includes('/products/')
+			currentURL !== undefined
 		){
 			oldURL = currentURL
 			location.reload()
