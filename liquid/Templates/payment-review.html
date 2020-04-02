@@ -200,7 +200,9 @@
                                                 name="use_shipping_address_id" id="use_shipping_address_id"
                                                 value="1" /><select name="shipping_address_id" id="shipping_address_id"
                                                 class="shipping-address-select hidden">
-                                                <option selected="selected" value="934564">sfasf</option>
+                                                {% for address in customer.addresses %}
+                                                <option selected="selected" value="934564">{{address.address1}}</option>
+                                                {% endfof %}
                                             </select>
                                             <div class="html-select wi-100 padding-left-30"
                                                 data-select="shipping-address-select">
@@ -209,10 +211,12 @@
                                                         <div class="dtc wi-5 tc v-mid"><img class="map-icon wi-45"
                                                                 src="https://bluebottlecoffee.com/assets/map-point-icon-06d0c36fb3fdba947a21705f46c21cb4ee3981a0a542d06149af51e0446b52bf.png"
                                                                 alt="Map point icon" /></div>
-                                                        <div class="dtc wi-60 padding-left-30">truc
-                                                            nguyen<br>sfasf<br>asd, AL
-                                                            02020<br>UNITED
-                                                            STATES</div>
+                                                        {% for address in customer.addresses %}
+                                                        <div class="dtc wi-60 padding-left-30">{{address.first_name}}
+                                                            {{address.last_name}}<br>{{address.address1}}<br>{{address.city}},
+                                                            {{address.country_code}}
+                                                            {{address.zip}}<br>{{address.country}}</div>
+                                                        {% endfof %}
                                                     </div>
                                                 </div>
                                             </div>
@@ -409,55 +413,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <hr class="mv40 hr-on-white" />
-                                    <div class="dt-l wi-100 mb15">
-                                        <div class="dtc-l mb5 mb0-l">
-                                            <div class="section-title">Shipping Options</div>
-                                        </div>
-                                        <div class="dtc-l tr-l">
-                                            <div
-                                                class="js-shipping-detailed-info cur-pointer spec-shipping-info js-display-label blue-text-link">
-                                                Show Details</div>
-                                        </div>
-                                    </div>
-                                    <div class="pl25">
-                                        <div
-                                            class="control-group radio_buttons optional customer_checkout_transport_method_id lh-reset flush">
-                                            <div class="controls"><input type="hidden"
-                                                    name="customer_checkout[transport_method_id]" value="" /><span
-                                                    class="radio"><label
-                                                        for="customer_checkout_transport_method_id_1"><input
-                                                            class="radio_buttons optional js-shipping-options spec-shipping-method"
-                                                            id="4678058" style="margin-top: -1px" type="radio" value="1"
-                                                            checked="checked"
-                                                            name="customer_checkout[transport_method_id]" />
-                                                        <div class='lh-reset book gray js-shipping-service-label f5'>
-                                                            $17.61 -
-                                                            Standard Shipping (Estimated 3-5 business days)</div>
-                                                    </label></span><span class="radio"><label
-                                                        for="customer_checkout_transport_method_id_5"><input
-                                                            class="radio_buttons optional js-shipping-options spec-shipping-method"
-                                                            id="4678058" style="margin-top: -1px" type="radio" value="5"
-                                                            name="customer_checkout[transport_method_id]" />
-                                                        <div class='lh-reset book gray js-shipping-service-label f5'>
-                                                            $49.55 -
-                                                            Expedited Shipping (2 business days)</div>
-                                                    </label></span></div>
-                                        </div>
-                                        <div class="dn pt10 js-description spec-shipping-description lh-title"><span
-                                                class='light-bold'>Expedited</span>: <span class='gray'>Coffee and
-                                                select items will
-                                                ship via USPS Priority Mail Express. Merchandise and brewing
-                                                supplies will ship via
-                                                USPS Priority Mail Express from Los Angeles, California.</span>
-                                        </div>
-                                        <div class="dn pt10 js-description spec-shipping-description lh-title"><span
-                                                class='light-bold'>Standard</span>: <span class='gray'>Coffee and
-                                                select items will
-                                                ship via USPS Priority or USPS First Class. Merchandise and brewing
-                                                supplies will
-                                                ship via UPS Ground from Los Angeles, California.</span></div>
                                     </div>
                                     <div class="js-billing-partials">
                                         <hr class="mv40 hr-on-white" />
