@@ -108,8 +108,8 @@
                     <div class="wi-100 slideshow js-variant-slideshow pos-rel dn js-slideshow-5284 spec-slideshow-5284">
                         <div class="triangular-overlay z-index-2 large pos-abs top-0 right-0"></div>
                         <div class="top-10 pos-abs f7 z-index-2 ls-1-5 lh-copy pl5 pt5 tc book uppercase white wi3 right-0 t-rotate-45">LIMITED RELEASE</div>
-                        <div class="cycle-slideshow z-index-1" data-cycle-log="false" data-cycle-manual-speed="10" data-cycle-pager="#no-template-pager-5284" data-cycle-pager-template="" data-cycle-speed="1000"><img width="576" height="576" class="wi-100" src="{{ product.image.src }}" alt="Zldttw6czcdskpimyznp" /></div>
-                        <div class="cycle-pager tc external mt15 wi-100 dn" data-cycle-cmd="pause" id="no-template-pager-5284"><img class="cycle-slide dib pa2" src="{{ product.image.src }}" alt="Zldttw6czcdskpimyznp" /></div>
+                        <div class="cycle-slideshow z-index-1" data-cycle-log="false" data-cycle-manual-speed="10" data-cycle-pager="#no-template-pager-5284" data-cycle-pager-template="" data-cycle-speed="1000"><img width="576" height="576" class="wi-100" src="{{product.images[0].src}}" alt="Zldttw6czcdskpimyznp" /></div>
+                        <div class="cycle-pager tc external mt15 wi-100 dn" data-cycle-cmd="pause" id="no-template-pager-5284"><img class="cycle-slide dib pa2" src="{{product.images[0].src}}" alt="Zldttw6czcdskpimyznp" /></div>
                     </div>
                 </div>
                 <div class="fr-ns wi-45-ns pl30-ns pv20 pv0-ns">
@@ -124,14 +124,7 @@
                             </div>
                         </div>
                     </div>
-                    <form class="mb0 js-add-to-cart-form js-add-to-cart-form-jiffy spec-add-to-cart-form-jiffy dn" action="/cart" accept-charset="UTF-8" method="post">
-                        <input name="utf8" type="hidden" value="&#x2713;" />
-                        <input type="hidden" name="_method" value="put" />
-                        <input type="hidden" name="authenticity_token" value="HnysXuSOtBl9svwAqLkhxCjr2ayyPadljULAF4TLsCcvG8nI7iC2O+7es9QWPvmN/a5i7jifHpeYvpPgieyBnw==" />
-                        <input value="true" type="hidden" name="cart_item_[redirect_to_added_to_cart]" id="cart_item_redirect_to_added_to_cart" />
-                        <input value="true" type="hidden" name="cart_item_[sum_quantities]" id="cart_item_sum_quantities" />
-                        <input value="Variant" type="hidden" name="cart_item_[model_type]" id="cart_item_model_type" />
-                        <input value="false" type="hidden" name="cart_item_[retail_account]" id="cart_item_retail_account" />
+                    <div class="mb0 js-add-to-cart-form js-add-to-cart-form-jiffy spec-add-to-cart-form-jiffy dn" action="/cart" accept-charset="UTF-8" method="post">
                         <div class="mb20">
                             <div class="f5 light-bold lh-title gray mb10">Bag Size</div>
                             <div class="grid-row compact">
@@ -143,45 +136,42 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="control-group select mb20 js-cart-quantity-input">
-                            <div class="f5 pb10 light-bold lh-title gray">Quantity</div>
-                            <div class="quantity-input js-quantity-input spec-quantity-input pos-rel" data-dropdown-max="10" data-quantity="1" data-selected-variant-id="5284" data-updateable="false" data-variants="{&quot;5284&quot;:{&quot;dropdown_options&quot;:[{&quot;value&quot;:1,&quot;text&quot;:1},{&quot;value&quot;:2,&quot;text&quot;:2},{&quot;value&quot;:3,&quot;text&quot;:3},{&quot;value&quot;:4,&quot;text&quot;:4},{&quot;value&quot;:5,&quot;text&quot;:5},{&quot;value&quot;:6,&quot;text&quot;:6},{&quot;value&quot;:7,&quot;text&quot;:7},{&quot;value&quot;:8,&quot;text&quot;:8},{&quot;value&quot;:9,&quot;text&quot;:9},{&quot;text&quot;:&quot;10+&quot;,&quot;value&quot;:10}],&quot;purchaseable_limit&quot;:167,&quot;purchaseable_limit_is_dropdown_max&quot;:false}}">
-                                <div class="quantity-dropdown js-quantity-dropdown styled fancy-select">
-                                    <div class="styled-select-box">
-                                        <select class="js-quantity-select spec-quantity-select quantity-select" name="cart_item_[quantity]" id="cart_item_quantity">
-                                            <option selected="selected" value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
-                                            <option value="7">7</option>
-                                            <option value="8">8</option>
-                                            <option value="9">9</option>
-                                            <option value="10">10+</option>
-                                        </select>
+
+                        <form method="post" action="/cart/add">
+                            <div class="control-group select mb20 js-cart-quantity-input">
+                                    <div class="f5 pb10 light-bold lh-title gray">Quantity</div>
+                                    <div class="quantity-input js-quantity-input spec-quantity-input pos-rel" data-dropdown-max="10" data-quantity="1" data-selected-variant-id="5284" data-updateable="false" data-variants="{&quot;5284&quot;:{&quot;dropdown_options&quot;:[{&quot;value&quot;:1,&quot;text&quot;:1},{&quot;value&quot;:2,&quot;text&quot;:2},{&quot;value&quot;:3,&quot;text&quot;:3},{&quot;value&quot;:4,&quot;text&quot;:4},{&quot;value&quot;:5,&quot;text&quot;:5},{&quot;value&quot;:6,&quot;text&quot;:6},{&quot;value&quot;:7,&quot;text&quot;:7},{&quot;value&quot;:8,&quot;text&quot;:8},{&quot;value&quot;:9,&quot;text&quot;:9},{&quot;text&quot;:&quot;10+&quot;,&quot;value&quot;:10}],&quot;purchaseable_limit&quot;:167,&quot;purchaseable_limit_is_dropdown_max&quot;:false}}">
+                                            <div class="quantity-dropdown js-quantity-dropdown styled fancy-select">
+                                                    <div class="styled-select-box">
+                                                        <select class="js-quantity-select spec-quantity-select quantity-select" name="quantity" id="cart_item_quantity">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
+                                                            <option value="10">10+</option>
+                                                        </select>
+                                                </div>
+                                            </div>
                                     </div>
-                                </div>
-                                <input min="0" value="1" disabled="disabled" required="required" class="quantity-number-field js-quantity-number-field spec-quantity-number-field tl wi-100" style="display: none;" type="number" name="cart_item_[quantity]" id="cart_item_quantity" />
-                                <input type="submit" name="Update" value="Update" class="update-cart js-update-cart spec-update-cart button b--white bb-blue-hover bg-white bb-blue f6 tl pl0 wi-100 v-top dn pv10 " />
                             </div>
-                        </div>
-                        <div class="js-variant-details-box js-variant-details-5284 ">
-                            <div class="dt pb20 wi-100 cf mb25">
-                                <div class="f5 light-bold lh-title gray mb10">Quantity Left</div>
-                                <div class="scarcity-meter spec-scarity-meter">
-                                    <div class="gauge rounded-capped ba b--light-silver">
-                                        <div class="h-100 rounded-capped bg-bb-blue p20"></div>
-                                    </div>
-                                </div>
+
+                            <div class="mt10 js-variant-details-box js-variant-details-5284 cf">
+                                    <p class="f3 f2-l lh-flush mv0 spec-your-price ws-nowrap dib v-mid"><span class="f6 pos-rel dib v-top">$</span><span class='dib v-top js-variant-price'>{{product.price}}</span>
+                                    </p>
                             </div>
-                        </div>
-                        <div class="mt10 js-variant-details-box js-variant-details-5284 cf">
-                            <p class="f3 f2-l lh-flush mv0 spec-your-price ws-nowrap dib v-mid"><span class="f6 pos-rel dib v-top">$</span><span class='dib v-top js-variant-price'>24</span>
-                            </p>
-                        </div>
-                        <button name="button" type="submit" class="primary-btn btn-15-30 wi-100 db tc mt20 spec-add-to-cart js-add-to-cart-btn" rel="add-to-cart">Add to Cart</button>
-                    </form>
+
+                            <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                            <button name="button" type="submit" class="primary-btn btn-15-30 wi-100 db tc mt20 spec-add-to-cart js-add-to-cart-btn" value="Add to cart" rel="add-to-cart">
+                                Add to cart
+                            </button>
+                        </form>
+                    </div>
+
                     <div class="js-variant-details">
                         <div class="mt5 dn js-variant-details-box js-shipping-estimate js-variant-details-5284 js-shipping-estimate-alc-5284 spec-shipping-estimate-alc-5284">
                             <p class="f6 ma0"> <span class='book dib v-top'>Roasts and ships on Tuesday, March 31st</span></p>
