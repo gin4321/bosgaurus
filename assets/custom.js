@@ -21,14 +21,14 @@ checkURLchange()
 
 $(function() {
 	$('.clear-cart').on('click',function(e){
-	  e.preventDefault();
-	  $.ajax({
-		type: "POST",
-		url: '/cart/clear.js',
-		success: function(){
-		  location.href = '/'
-		},
-		dataType: 'json'
-	  });
+		e.preventDefault();
+		$.ajax({
+			type: "POST",
+			url: '/cart/clear.js',
+			success: function(){
+			location.href = '/'
+			},
+			dataType: 'json'
+		});
 	})
-  });
+});
