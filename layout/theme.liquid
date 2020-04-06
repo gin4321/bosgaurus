@@ -12,11 +12,10 @@
 	{{ content_for_layout }}
   
 	{{ 'index.js' | asset_url | script_tag }}
-	{{ 'vendor.js' | asset_url | script_tag }}
 	{{ 'config.js' | asset_url | script_tag }}
+	{{ 'vendor.js' | asset_url | script_tag }}
 	{{ 'application1.js' | asset_url | script_tag }}
 	{{ 'application2.js' | asset_url | script_tag }}
 	{{ 'custom.js' | asset_url | script_tag }}
-
 </body>
 </html>
