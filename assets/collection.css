@@ -10308,6 +10308,10 @@ a {
   color: #01a1dd;
 }
 
+.color_black {
+  color: #000 !important;
+}
+
 section {
   padding: 15px;
 }
