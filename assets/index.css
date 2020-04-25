@@ -3382,38 +3382,38 @@ input:-webkit-autofill:hover {
 
 .container-product{
 	display: flex;
-  }
+}
+
+.c-collFiltersGroup{
+width: 260px;
+	position: relative;
+}
   
-  .c-collFiltersGroup{
-	width: 260px;
-	  position: relative;
-  }
-  
-  .c-colFiltersGroup-Fixed{
-	  position: fixed;
-	  z-index: 1000;
-  }
-  
-  .c-collFiltersGroup__title{
-	  font-size: 20px;
-	  color: #7a7c85;
-	  position: relative;
-	  cursor: pointer;
-	  padding: 15px 30px 0 0;
-	  margin: 0 0 30px;
-  }
-  
-  .c-collFiltersGroup__list{
-	  font-size: 16px;
-	  line-height: 20px;
-	  padding: 0 20px 16px 0;
-  }
-  
-  .c-collFiltersGroup__list > a{
-	  color: #7a7c85;
-  }
-  
-  .c-collFiltersGroup__list > a:hover{
-	  color: #7a7c85;
-	  text-decoration: underline;
-  }
+.c-colFiltersGroup-Fixed{
+	position: fixed;
+	z-index: 1000;
+}
+
+.c-collFiltersGroup__title{
+	font-size: 20px;
+	color: #7a7c85;
+	position: relative;
+	cursor: pointer;
+	padding: 15px 30px 0 0;
+	margin: 0 0 30px;
+}
+
+.c-collFiltersGroup__list{
+	font-size: 16px;
+	line-height: 20px;
+	padding: 0 20px 16px 0;
+}
+
+.c-collFiltersGroup__list > a{
+	color: #7a7c85;
+}
+
+.c-collFiltersGroup__list > a:hover{
+	color: #7a7c85;
+	text-decoration: underline;
+}
