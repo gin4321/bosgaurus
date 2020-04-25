@@ -16,18 +16,14 @@
             <div class="main-container-styles js-store-index js-subcategory-deep-link">
                 <div class="container-product">
                     <div class="c-collFiltersGroup">
-                        <h4 class="c-collFiltersGroup__title">Product Type</h4>
-                        <ul class="c-collFilterGroup__ul js-contentAccordian">
-                            <li class="c-collFiltersGroup__list"><a href="/collections/foundation">Foundation</a></li>
-                            <li class="c-collFiltersGroup__list"><a href="/collections/revealer-concealer">Revealer Concealer</a></li>
-                            <li class="c-collFiltersGroup__list"><a href="/collections/bronzer">Bronzer</a></li>
-                            <li class="c-collFiltersGroup__list"><a href="/collections/lipstick">Lipstick</a></li>
-                            <li class="c-collFiltersGroup__list"><a href="/collections/lip-gloss">Lip Gloss</a></li>
-                            <li class="c-collFiltersGroup__list"><a href="/collections/lip-balm">Lip Balm</a></li>
-                            <li class="c-collFiltersGroup__list"><a href="/collections/eyeshadow">Eyeshadow</a></li>
-                            <li class="c-collFiltersGroup__list"><a href="/collections/sets">Sets</a></li>
-                            <li class="c-collFiltersGroup__list"><a href="/collections/best-sellers">Best Sellers</a></li>
-                        </ul>
+                        <div class="c-colFiltersGroup-Fixed">
+                            <h4 class="c-collFiltersGroup__title">Product Type</h4>
+                            <ul class="c-collFilterGroup__ul js-contentAccordian">
+                                {% for collection in collections %}
+                                <li class="c-collFiltersGroup__list"><a href="/collections/{{collection.handle}}">{{collection.title}}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
                     </div>
                     <div class="dt-ns wi-100">
                         <div class="dtc-ns v-top js-products-container">
