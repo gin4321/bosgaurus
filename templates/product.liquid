@@ -3,118 +3,155 @@
 {% comment %} end menu {% endcomment %}
 
 <main class="a-main" data-router-wrapper>
-<div class="a-page" data-router-view="renderer">
-<div class="a-scroll">
-<header class="s-header s-header-case" style="display: none;">
-    <div class="s-header-copy">
-        <h3 class="f-hs">Vibration Workingshare</h3>
-        <h2 class="f-hl">A local Coworking <br /> Space & Community</h2> </div>
-    <div class="s-header-scroll"> <span class="b-sc"> Scroll Down <svg class="i-arrow" viewBox="0 0 40 40"> <circle cx="20" cy="20" r="19"/> <line x1="12.5" y1="20" x2="26.5" y2="20"/> <line x1="23.5" y1="15" x2="27.5" y2="20"/> <line x1="23.5" y1="25" x2="27.5" y2="20"/> </svg> </span> </div>
-    <div class="s-header-cover"> <img class="s-header-image" style="background-image: url('../../assets/imgs/coffee/coworking-case-study.png');"> </div>
-</header>
-<div class="main-container-styles js-store-index js-subcategory-deep-link">
-
-    <div class="container primary">
-        <article class="u-center mw-container pt60 ph20 ph0-l" id="shop">
-            <div class="tc">
-                <div class="f3 f2-ns mt0 lh-reset mb10">{{ product.title }}</div>
-                <div class="f5 lh-copy mt0 mb30 italic serif-font">{{ product.description }}</div>
-            </div>
-            <div class="cf mt40">
-                <div class="fl-ns wi-55-ns pv15 pv0-ns">
-                    <div class="wi-100 slideshow js-variant-slideshow pos-rel dn js-slideshow-5284 spec-slideshow-5284">
-                        <div class="triangular-overlay z-index-2 large pos-abs top-0 right-0"></div>
-                        <div class="top-10 pos-abs f7 z-index-2 ls-1-5 lh-copy pl5 pt5 tc book uppercase white wi3 right-0 t-rotate-45">LIMITED RELEASE</div>
-                        <div class="cycle-slideshow z-index-1" data-cycle-log="false" data-cycle-manual-speed="10" data-cycle-pager="#no-template-pager-5284" data-cycle-pager-template="" data-cycle-speed="1000"><img width="576" height="576" class="wi-100" src="{{product.images[0].src}}" alt="Zldttw6czcdskpimyznp" /></div>
-                        <div class="cycle-pager tc external mt15 wi-100 dn" data-cycle-cmd="pause" id="no-template-pager-5284"><img class="cycle-slide dib pa2" src="{{product.images[0].src}}" alt="Zldttw6czcdskpimyznp" /></div>
-                    </div>
+    <div class="a-page" data-router-view="renderer">
+        <div class="a-scroll">
+            <header class="s-header s-header-case" style="display: none;">
+                <div class="s-header-copy">
+                    <h3 class="f-hs">Vibration Workingshare</h3>
+                    <h2 class="f-hl">A local Coworking <br /> Space & Community</h2>
                 </div>
-                <div class="fr-ns wi-45-ns pl30-ns pv20 pv0-ns">
-                    <div class="mb20">
-                        <div class="f5 light-bold lh-title gray mb10">Tastes note: abc</div>
-                        <div class="f5 light-bold lh-title gray mb10">Varieties: abc</div>
-                        <div class="f5 light-bold lh-title gray mb10">processing method: abc</div>
-                        <div class="f5 light-bold lh-title gray mb10">origin:abc</div>
-                        <div class="f5 light-bold lh-title gray mb10">crops:abc</div>
-                        <div class="f5 light-bold lh-title gray mb10">Roasts for:abc</div>
-                        <div class="f5 light-bold lh-title gray mb10">Preparation: abc</div>
-                        <div class="f5 light-bold lh-title gray mb10">Grind size: abc</div>
-                    </div>
-                    <div class="mb0 js-add-to-cart-form js-add-to-cart-form-jiffy spec-add-to-cart-form-jiffy dn" action="/cart" accept-charset="UTF-8" method="post">
-                        <div class="mb20">
-                            <div class="grid-row compact">
-                                <div class="grid-col compact grid-col-2 df spec-one-time-purchase-size-3oz">
-                                    <div class="df grid-col-1">
-                                        <input class="js-variant-button dn " id="model_5284" type="radio" value="5284" checked="checked" name="cart_item_[model_id]" />
-                                        
+                <div class="s-header-scroll"> <span class="b-sc"> Scroll Down <svg class="i-arrow" viewBox="0 0 40 40">
+                            <circle cx="20" cy="20" r="19" />
+                            <line x1="12.5" y1="20" x2="26.5" y2="20" />
+                            <line x1="23.5" y1="15" x2="27.5" y2="20" />
+                            <line x1="23.5" y1="25" x2="27.5" y2="20" /> </svg> </span> </div>
+                <div class="s-header-cover"> <img class="s-header-image"
+                        style="background-image: url('../../assets/imgs/coffee/coworking-case-study.png');"> </div>
+            </header>
+            <div class="main-container-styles js-store-index js-subcategory-deep-link max-1024">
+
+                <div class="container primary">
+                    <article class="u-center mw-container pt100 ph20 ph0-l" id="shop">
+
+                        <div class="cf mt40">
+                            <div class="df">
+                                <div class="fl-ns wi-50-ns pv15 pv0-ns pol-rel">
+                                    <div class="wi-100 slideshow js-variant-slideshow pos-rel js-slideshow-5284 spec-slideshow-5284 left-30">
+                                        <div class="cycle-slideshow z-index-1" data-cycle-log="false"
+                                            data-cycle-manual-speed="10" data-cycle-pager="#no-template-pager-5284"
+                                            data-cycle-pager-template="" data-cycle-speed="1000"><img width="576"
+                                                height="576" class="wi-100" src="{{product.images[0].src}}"
+                                                alt="Zldttw6czcdskpimyznp" /></div>
+                                        <div class="cycle-pager tc external mt15 wi-100 dn" data-cycle-cmd="pause"
+                                            id="no-template-pager-5284"><img class="cycle-slide dib pa2"
+                                                src="{{product.images[0].src}}" alt="Zldttw6czcdskpimyznp" /></div>
                                     </div>
                                 </div>
-                            </div>
+                                <div class="wi-50-ns">
+                                    <div class="pl30-ns pv20 pv0-ns df">
+                                        <div class="text-left">
+                                            <div class="f3 f2-ns mt0 lh-reset mb10">{{ product.title }}</div>
+                                            <div class="f5 lh-copy mt0 mb30 italic serif-font">{{ product.description }}
+                                            </div>
+                                        </div>
+                                        <div class="mb0 js-add-to-cart-form js-add-to-cart-form-jiffy spec-add-to-cart-form-jiffy"
+                                            action="/cart" accept-charset="UTF-8" method="post">
+																					<div class="grindSeclect margin-left-30">
+																						<select id="grindSize" onChange="grindChange(value)">
+																							<option value="wholeBean">Whole Bean</option>
+																							<option value="grind">Grind</option>
+																						</select>
+																							<div class="grindChoice dn">
+																								<button id="myBtn" type="button">choose size here</button>
+																							</div>
+																							<div id="myModal" class="modal">
+																								<div class="modal-content">
+																									<span class="close">&times;</span>
+																									<p>Some text in the Modal..</p>
+																								</div>
+																						</div>
+																					</div>
+                                            <form class="product-form">
+    
+                                                <div class="control-group select mb20 js-cart-quantity-input pull-right">
+                                                    <div class="f5 pb10 light-bold lh-title gray">Quantity</div>
+                                                    <div class="quantity-input js-quantity-input spec-quantity-input pos-rel"
+                                                        data-dropdown-max="10" data-quantity="1"
+                                                        data-selected-variant-id="5284" data-updateable="false"
+                                                        data-variants="{&quot;5284&quot;:{&quot;dropdown_options&quot;:[{&quot;value&quot;:1,&quot;text&quot;:1},{&quot;value&quot;:2,&quot;text&quot;:2},{&quot;value&quot;:3,&quot;text&quot;:3},{&quot;value&quot;:4,&quot;text&quot;:4},{&quot;value&quot;:5,&quot;text&quot;:5},{&quot;value&quot;:6,&quot;text&quot;:6},{&quot;value&quot;:7,&quot;text&quot;:7},{&quot;value&quot;:8,&quot;text&quot;:8},{&quot;value&quot;:9,&quot;text&quot;:9},{&quot;text&quot;:&quot;10+&quot;,&quot;value&quot;:10}],&quot;purchaseable_limit&quot;:171,&quot;purchaseable_limit_is_dropdown_max&quot;:false}}">
+    
+                                                        <input name="quantity-number" min="0" required="required"
+                                                            class="quantity-number-field js-quantity-number-field spec-quantity-number-field tl wi-100"
+                                                            style="display: block;" type="number">
+                                                    </div>
+                                                </div>
+                                                <div class="mt10 js-variant-details-box js-variant-details-5284 cf">
+                                                    <p class="f3 f2-l lh-flush mv0 spec-your-price ws-nowrap dib v-mid">
+                                                        <span class="f6 pos-rel dib v-top"></span><span
+                                                            class='dib v-top js-variant-price text-right'>
+                                                            {{ product.price | money }}/Per <br />(Subcribe for Discount:
+                                                            {{product.price | times: 0.1 | round | money}}/Per)</span>
+                                                    </p>
+                                                </div>
+                                                <input class="product-id" type="hidden" name="product-id"
+                                                    value="{{ product.variants.first.id }}" />
+                                                <button name="button" type="submit"
+                                                    class="add-to-cart-btn primary-btn btn-15-30 wi-100 db tc mt20 spec-add-to-cart js-add-to-cart-btn"
+                                                    value="Add to cart" rel="add-to-cart">
+                                                    Add to cart
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="bt b--light-silver mt20 pt20 js-gift-subscription-promo margin-left-6" data-gift-subscription-add-ons="[&quot;2134&quot;, &quot;2311&quot;, &quot;4786&quot;]">
+                                        <div class="details-title">Did You Know?</div>
+                                        <div class="lh-body pb20 pt5">
+                                            You can add this item as a gift when you send a gift subscription
+                                        </div>
+                                        <a class="secondary-blue-btn btn-15-30 btn db" href="/at-home/gift">Send a Gift Subscription</a>
+                                    </div>
+                                    <div class="tab margin-left-6">
+																				<div class="button-tab">
+																						<button id="defaultOpen" class="tablinks"
+                                            onclick="openTab(event, 'flavorNote')">Flavor Note</button>
+                                        <button class="tablinks" onclick="openTab(event, 'detail')">Detail</button>
+    
+																				</div>
+                                        <div id="flavorNote" class="tabcontent">
+                                          <p>About This Coffee</p>
+																					<p>
+																						This intensely fruited and floral
+                                            coffee nearly leapt off the cupping table. With a hard-candy-like
+                                            sweetness, it tastes like no other coffee we’ve ever tried. From a
+                                            highly experimental producer in Colombia, this coffee brings together
+                                            two microtrends: an initial fermentation without oxygen and a second
+                                            fermentation that includes the addition of specific yeasts. The wild
+                                            result combines the intense fruitiness of natural processing with the
+                                            clean flavors and complex acidity we associate with washed processing.
+																					</p>
+																					<ul>
+																						<li>Our coffees go through a rigorous selection and
+																							quality-testing process, and we only share the coffees that have most
+																							captured our imaginations.</li>
+																						<li>Each bag of Colombia Finca El
+																							Paraíso Red Plum whole beans is shipped to you within 24
+																							hours of roasting.</li>
+																					</ul>
+                                        </div>
+                                        <div id="detail" class="tabcontent">
+																					<div class="mb20">
+																						<div class="f5 light-bold lh-title gray mb10">Tastes note: abc</div>
+																						<div class="f5 light-bold lh-title gray mb10">Varieties: abc</div>
+																						<div class="f5 light-bold lh-title gray mb10">processing method: abc</div>
+																						<div class="f5 light-bold lh-title gray mb10">origin:abc</div>
+																						<div class="f5 light-bold lh-title gray mb10">crops:abc</div>
+																						<div class="f5 light-bold lh-title gray mb10">Roasts for:abc</div>
+																						<div class="f5 light-bold lh-title gray mb10">Preparation: abc</div>
+																						<div class="f5 light-bold lh-title gray mb10">Grind size: abc</div>
+																					</div>
+                                        </div>
+                                    </div>
+                                </div>
                         </div>
-
-											<form class="product-form">
-
-												<div class="control-group select mb20 js-cart-quantity-input">
-													<div class="f5 pb10 light-bold lh-title gray">Quantity</div>
-													<div class="quantity-input js-quantity-input spec-quantity-input pos-rel" data-dropdown-max="10" data-quantity="1" data-selected-variant-id="5284" data-updateable="false" data-variants="{&quot;5284&quot;:{&quot;dropdown_options&quot;:[{&quot;value&quot;:1,&quot;text&quot;:1},{&quot;value&quot;:2,&quot;text&quot;:2},{&quot;value&quot;:3,&quot;text&quot;:3},{&quot;value&quot;:4,&quot;text&quot;:4},{&quot;value&quot;:5,&quot;text&quot;:5},{&quot;value&quot;:6,&quot;text&quot;:6},{&quot;value&quot;:7,&quot;text&quot;:7},{&quot;value&quot;:8,&quot;text&quot;:8},{&quot;value&quot;:9,&quot;text&quot;:9},{&quot;text&quot;:&quot;10+&quot;,&quot;value&quot;:10}],&quot;purchaseable_limit&quot;:171,&quot;purchaseable_limit_is_dropdown_max&quot;:false}}">
-														<div class="quantity-dropdown js-quantity-dropdown styled fancy-select">
-															<div class="styled-select-box">
-																<select class="quantity-select" name="quantity-select" onchange="onChangeQuantity(event, value)" no_trigger="1">
-																	{% for i in (1..10) %}
-																	{% if i == item.quantity %}
-																	<option selected value="{{ i }}">{{ i }}</option>
-																	{% elseif i > 9 %}
-																	<option value="10+"> 10+</option>
-																	{% else %}
-																	<option value="{{ i }}">{{ i }}</option>
-																	{% endif %}
-																	{% endfor %}
-																</select>
-															</div>
-														</div>
-														<input name="quantity-number" min="0" disabled="" required="required" class="quantity-number-field js-quantity-number-field spec-quantity-number-field tl wi-100" style="display: none;" type="number" >
-													</div>
-												</div>
-												<div class="mt10 js-variant-details-box js-variant-details-5284 cf">
-													<p class="f3 f2-l lh-flush mv0 spec-your-price ws-nowrap dib v-mid"><span class="f6 pos-rel dib v-top"></span><span class='dib v-top js-variant-price'>{{ product.price | money }}/Per <br />(Subcribe for Discount: {{product.price | times: 0.1 | round | money}}/Per)</span>
-													</p>
-												</div>
-												<input class="product-id" type="hidden" name="product-id" value="{{ product.variants.first.id }}" />
-												<button name="button" type="submit" class="add-to-cart-btn primary-btn btn-15-30 wi-100 db tc mt20 spec-add-to-cart js-add-to-cart-btn" value="Add to cart" rel="add-to-cart">
-													Add to cart
-												</button>
-
-											</form>
+                    </article>
+                    <div class="cf" data-load="/product_cards/colombia-finca-el-paraiso-red-plum/related"
+                        id="js-related-products"></div>
+                    <div class="dn"
+                        data-tracking-product-viewed="{&quot;5284&quot;:{&quot;order_id&quot;:4712129,&quot;id&quot;:1362,&quot;name&quot;:&quot;Colombia Finca El Paraíso Red Plum&quot;,&quot;variant_id&quot;:5284,&quot;variant&quot;:&quot;100G Tin&quot;,&quot;sku&quot;:&quot;SACRAMENTO-PLUM-3.5274OZ-RTL&quot;,&quot;price&quot;:24.0,&quot;discount&quot;:0.0,&quot;currency&quot;:&quot;USD&quot;,&quot;url&quot;:&quot;https://bluebottlecoffee.com/store/colombia-finca-el-paraiso-red-plum&quot;}}">
                     </div>
-
-                    <div class="js-variant-details">
-                        <div class="mt5 dn js-variant-details-box js-shipping-estimate js-variant-details-5284 js-shipping-estimate-alc-5284 spec-shipping-estimate-alc-5284">
-                            <p class="f6 ma0"> <span class='book dib v-top'>Roasts and ships on Tuesday, March 31st</span></p>
-                        </div>
-                    </div>
-                    <div class="bt b--light-silver mt20 pt20 dn js-gift-subscription-promo" data-gift-subscription-add-ons="[&quot;2134&quot;, &quot;2311&quot;, &quot;4786&quot;]">
-                        <div class="details-title">Did You Know?</div>
-                        <div class="lh-body pb20 pt5">You can add this item as a gift when you send a gift subscription</div><a class="secondary-blue-btn btn-15-30 btn db" href="/at-home/gift">Send a Gift Subscription</a></div>
                 </div>
-                <div class="bt b--light-silver pv20 pv60-ns cf fl-ns wi-55-ns bt-none-ns">
-                    <h5 class="details-title mt0 mb10">About This Coffee</h5>
-                    <div class="mb40">
-                        <div class="f5 lh-copy spec-overview mb5">This intensely fruited and floral coffee nearly leapt off the cupping table. With a hard-candy-like sweetness, it tastes like no other coffee we’ve ever tried. From a highly experimental producer in Colombia, this coffee brings together two microtrends: an initial fermentation without oxygen and a second fermentation that includes the addition of specific yeasts. The wild result combines the intense fruitiness of natural processing with the clean flavors and complex acidity we associate with washed processing.</div>
-                    </div>
-                    <h5 class="details-title mt0 mb10">Notes</h5>
-                    <ul class="f5 lh-copy ml20">
-                        <li class='mb15 lh-copy'>Our coffees go through a rigorous selection and quality-testing process, and we only share the coffees that have most captured our imaginations.</li>
-                        <li class='mb15 lh-copy js-whole-bean-notes'>Each bag of Colombia Finca El Paraíso Red Plum whole beans is shipped to you within <span class='bold'>24 hours</span> of roasting.</li>
-                        <li class="lh-copy js-ground-coffee-notes">Learn more about <a class="js-play-vimeo-video f5 blue-text-link" data-video-id="182642979" data-modal=".js-perfect-video-modal" href="#">Perfectly Ground</a></li>
-                    </ul>
-                </div>
+
             </div>
-        </article>
-        <div class="cf" data-load="/product_cards/colombia-finca-el-paraiso-red-plum/related" id="js-related-products"></div>
-        <div class="dn" data-tracking-product-viewed="{&quot;5284&quot;:{&quot;order_id&quot;:4712129,&quot;id&quot;:1362,&quot;name&quot;:&quot;Colombia Finca El Paraíso Red Plum&quot;,&quot;variant_id&quot;:5284,&quot;variant&quot;:&quot;100G Tin&quot;,&quot;sku&quot;:&quot;SACRAMENTO-PLUM-3.5274OZ-RTL&quot;,&quot;price&quot;:24.0,&quot;discount&quot;:0.0,&quot;currency&quot;:&quot;USD&quot;,&quot;url&quot;:&quot;https://bluebottlecoffee.com/store/colombia-finca-el-paraiso-red-plum&quot;}}"></div>
+        </div>
     </div>
-
-</div>
-</div>
-</div>
 </main>
